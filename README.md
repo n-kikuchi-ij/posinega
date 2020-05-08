@@ -7,3 +7,5 @@ RUN `docker run -it prototype:1.0 /bin/bash`
 
 ## After you enter docker container
 `cd workdir`
+
+RUN `python3 today.py`
