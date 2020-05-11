@@ -14,3 +14,6 @@ RUN echo "export LANG=ja_JP.UTF-8" >> ~/.bashrc
 
 RUN pip3 install mecab-python3
 RUN pip3 install oseti
+
+RUN pip3 install flask
+RUN pip3 install jinja2

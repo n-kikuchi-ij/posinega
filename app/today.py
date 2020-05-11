@@ -3,10 +3,9 @@ import sys, codecs, io
 
 print("今日の気分を入力してください")
 kibun = input()
-strkibun = str(kibun)
 
-a = oseti.Analyzer()
-analized_kibun = a.analyze(strkibun)
+analyzer = oseti.Analyzer()
+analized_kibun = analyzer.analyze(kibun)
 
 score_for_today = analized_kibun[0]
 if score_for_today >= 1.0:
