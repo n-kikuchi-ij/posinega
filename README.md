@@ -1,11 +1,12 @@
 # posinega
 
 ## How to start dockerimage
-RUN `docker build . -t prototype:1.0`
+RUN `docker build . -t XXXXXXX:version`
 
-RUN `docker run -it prototype:1.0 /bin/bash`
+RUN `docker run -it -p 5000:5000 XXXXXXX:version /bin/bash`
 
 ## After you enter docker container
 `cd workdir`
 
-RUN `python3 today.py`
+RUN `python3 app.py`
+Access http://0.0.0.0:5000/
